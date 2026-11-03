@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrei James O. Francisco | Student Profile - BulSU BSIT</title>
+  <meta name="description" content="Student Profile of Andrei James O. Francisco, 3rd Year BSIT student at Bulacan State University (BulSU). Explore academic background, technical skills, and projects.">
+  <meta name="author" content="Andrei James O. Francisco">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-badge">BulSU CICT</span>
+        <span class="brand-title">Student Profile</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-link active"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#academics" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Academics</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero-card" id="profile">
+      <div class="hero-grid">
+        
+        <div class="avatar-column">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <img 
+              id="studentAvatar" 
+              src="assets/profile.jpg" 
+              alt="Portrait of Andrei James O. Francisco" 
+              class="avatar-img"
+              onerror="this.onerror=null; this.src='assets/avatar-placeholder.svg';"
+            >
+            <span class="status-indicator" title="Active Student">
+              <span class="status-dot"></span> Active
+            </span>
+          </div>
+        </div>
+
+        <div class="details-column">
+          <div class="badge-row">
+            <span class="tag tag-university"><i class="fa-solid fa-landmark"></i> Bulacan State University</span>
+            <span class="tag tag-program"><i class="fa-solid fa-laptop-code"></i> BSIT 3F-G2</span>
+            <span class="tag tag-year"><i class="fa-solid fa-calendar-check"></i> 3rd Year</span>
+          </div>
+
+          <h1 class="student-name">Andrei James O. Francisco</h1>
+          <p class="student-role">
+            <span class="typing-prefix">Aspiring</span>
+            <span id="typedRole" class="typed-text">Information Technology Professional</span>
+          </p>
+
+          <div class="student-id-card">
+            <div class="id-meta">
+              <span class="id-label">OFFICIAL STUDENT ID</span>
+              <span class="id-number" id="studentIdValue">2024105459</span>
+            </div>
+            <button id="copyIdBtn" class="copy-btn" title="Copy Student ID" aria-label="Copy Student ID">
+              <i class="fa-regular fa-copy" id="copyIcon"></i>
+              <span id="copyText">Copy ID</span>
+            </button>
+          </div>
+
+          <p class="lead-intro">
+            3rd-year BSIT at Bulacan State University. By day, I'm building UIs and writing code. By night, I'm shooting pool, reading comics, bingeing anime, or grinding out matches on PC. Always building, always playing.
+          </p>
+
+          <div class="cta-row">
+            <a href="#about" class="btn btn-primary"><i class="fa-solid fa-circle-info"></i> Full Introduction</a>
+            <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="metric-info">
+            <span class="metric-label">Degree Program</span>
+            <span class="metric-value">BS in Information Technology</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+          <div class="metric-info">
+            <span class="metric-label">Year & Section</span>
+            <span class="metric-value">3rd Year • 3F - Group 2</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-id-card"></i></div>
+          <div class="metric-info">
+            <span class="metric-label">Student ID Number</span>
+            <span class="metric-value">2024105459</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="metric-info">
+            <span class="metric-label">Institution</span>
+            <span class="metric-value">Bulacan State University</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-tabs-container">
+      <div class="tabs-header" role="tablist">
+        <button class="tab-btn active" data-tab="about" role="tab" aria-selected="true">
+          <i class="fa-solid fa-user-astronaut"></i> Biography & Introduction
+        </button>
+        <button class="tab-btn" data-tab="academics" role="tab" aria-selected="false">
+          <i class="fa-solid fa-book-bookmark"></i> Academic Background
+        </button>
+        <button class="tab-btn" data-tab="skills" role="tab" aria-selected="false">
+          <i class="fa-solid fa-laptop-code"></i> Technical Stack
+        </button>
+        <button class="tab-btn" data-tab="projects" role="tab" aria-selected="false">
+          <i class="fa-solid fa-diagram-project"></i> Coursework & Goals
+        </button>
+      </div>
+
+      <div class="tab-panel active" id="tab-about">
+        <div class="panel-card">
+          <div class="panel-section-header">
+            <div>
+              <span class="sub-heading">Get to know me</span>
+              <h2>Personal Introduction</h2>
+            </div>
+            <span class="pill-badge"><i class="fa-solid fa-gamepad"></i> Always Building, Always Playing</span>
+          </div>
+
+          <div class="intro-paragraphs">
+            <p>
+              Hi there! I'm <strong>Andrei James O. Francisco</strong>, a 3rd-year Bachelor of Science in Information Technology (BSIT 3F-G2) student at <strong>Bulacan State University</strong> (Student ID: <code>2024105459</code>).
+            </p>
+            <p>
+              My everyday life revolves around a balance of creation and recreation: <strong>by day</strong>, I immerse myself in tech—crafting responsive user interfaces, writing clean front-end code, and exploring emerging software solutions. I treat every project as an opportunity to build software that is both visually engaging and functionally seamless.
+            </p>
+            <p>
+              <strong>By night</strong>, you'll find me recharging my energy—lining up shots on the pool table, getting lost in comic books, bingeing the latest anime series, or locked into intense PC gaming matches with friends. For me, gaming and development share the same heartbeat: strategy, analytical problem-solving, and continuous progression. <strong>Always building, always playing.</strong>
+            </p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>UI & Code Craft</h3>
+              <p>Designing interactive user interfaces, writing modern JavaScript, and building clean web systems by day.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-gamepad"></i></div>
+              <h3>PC Gaming & Pool</h3>
+              <p>Sharpening reflexes, tactical strategy, and focus through PC gaming matches and pool table precision by night.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h3>Comics & Anime</h3>
+              <p>Fueling creativity and storytelling inspiration through captivating comic universes and anime marathons.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-academics">
+        <div class="panel-card">
+          <div class="panel-section-header">
+            <div>
+              <span class="sub-heading">BulSU CICT Curriculum</span>
+              <h2>Academic Details & Coursework</h2>
+            </div>
+            <span class="pill-badge"><i class="fa-solid fa-award"></i> Junior Standing</span>
+          </div>
+
+          <div class="academic-details-grid">
+            <div class="academic-item">
+              <span class="academic-label">University</span>
+              <p class="academic-val">Bulacan State University (BulSU) - Main Campus</p>
+            </div>
+            <div class="academic-item">
+              <span class="academic-label">College / Department</span>
+              <p class="academic-val">College of Information and Communications Technology (CICT)</p>
+            </div>
+            <div class="academic-item">
+              <span class="academic-label">Degree</span>
+              <p class="academic-val">Bachelor of Science in Information Technology</p>
+            </div>
+            <div class="academic-item">
+              <span class="academic-label">Year, Section & Group</span>
+              <p class="academic-val">3rd Year, Section 3F, Group 2 (BSIT 3F-G2)</p>
+            </div>
+            <div class="academic-item">
+              <span class="academic-label">Student ID Number</span>
+              <p class="academic-val"><code>2024105459</code></p>
+            </div>
+            <div class="academic-item">
+              <span class="academic-label">Academic Status</span>
+              <p class="academic-val"><span class="badge-good">Regular Student in Good Standing</span></p>
+            </div>
+          </div>
+
+          <h3 class="subsection-title"><i class="fa-solid fa-list-check"></i> Key Subject Areas & Focus</h3>
+          <div class="courses-tags">
+            <div class="course-chip">
+              <span class="chip-code">ADET</span>
+              <span class="chip-name">Application Development & Emerging Technologies</span>
+            </div>
+            <div class="course-chip">
+              <span class="chip-code">WS</span>
+              <span class="chip-name">Web Systems and Technologies</span>
+            </div>
+            <div class="course-chip">
+              <span class="chip-code">DBMS</span>
+              <span class="chip-name">Database Management Systems</span>
+            </div>
+            <div class="course-chip">
+              <span class="chip-code">SAD</span>
+              <span class="chip-name">Systems Analysis and Design</span>
+            </div>
+            <div class="course-chip">
+              <span class="chip-code">NET</span>
+              <span class="chip-name">Networking and Communications</span>
+            </div>
+            <div class="course-chip">
+              <span class="chip-code">IAS</span>
+              <span class="chip-name">Information Assurance and Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-skills">
+        <div class="panel-card">
+          <div class="panel-section-header">
+            <div>
+              <span class="sub-heading">Capabilities</span>
+              <h2>Technical & Professional Skills</h2>
+            </div>
+            <span class="pill-badge"><i class="fa-solid fa-terminal"></i> Tech Arsenal</span>
+          </div>
+
+          <div class="skills-categories-grid">
+            <div class="skills-category-card">
+              <div class="cat-header">
+                <i class="fa-brands fa-html5 cat-icon"></i>
+                <h3>Front-End Web Development</h3>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>HTML5 (Semantic & Accessible)</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>CSS3 (Flexbox, Grid, Animations)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>JavaScript (ES6+, DOM, Fetch API)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Responsive UI & Mobile First Design</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+
+            <div class="skills-category-card">
+              <div class="cat-header">
+                <i class="fa-solid fa-database cat-icon"></i>
+                <h3>Backend & Database Systems</h3>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Relational Databases (SQL / MySQL)</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Backend Fundamentals & APIs</span>
+                  <span class="skill-pct">72%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 72%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>System Architecture & ERD Design</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+
+            <div class="skills-category-card">
+              <div class="cat-header">
+                <i class="fa-solid fa-screwdriver-wrench cat-icon"></i>
+                <h3>Tools & Methodologies</h3>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Git & Version Control</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>VS Code / Developer Workflows</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Agile Team Collaboration</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-projects">
+        <div class="panel-card">
+          <div class="panel-section-header">
+            <div>
+              <span class="sub-heading">Academic Endeavors</span>
+              <h2>Projects & Learning Milestones</h2>
+            </div>
+            <span class="pill-badge"><i class="fa-solid fa-star"></i> BSIT Portfolio</span>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-badge">Current Subject: ADET</div>
+              <h3>Interactive Student Profile System</h3>
+              <p>A responsive, modern student digital identity platform crafted with semantic HTML5, glassmorphic CSS3 styling, and JavaScript interactive state management.</p>
+              <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-badge">Coursework</div>
+              <h3>Web-Based Information System</h3>
+              <p>Collaborative 3rd year project focusing on database normalization, dynamic records tracking, and user permission access control.</p>
+              <div class="tech-tags">
+                <span>Web Tech</span>
+                <span>Database</span>
+                <span>UI/UX</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-badge">Academic Milestone</div>
+              <h3>Junior Capstone Preparation</h3>
+              <p>Conducting requirements discovery, conceptual system analysis, and tech stack validation for upcoming senior capstone project.</p>
+              <div class="tech-tags">
+                <span>System Analysis</span>
+                <span>Architecture</span>
+                <span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="panel-card">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="sub-heading">Get in touch</span>
+            <h2>Let's Connect</h2>
+            <p>
+              Have questions, collaboration inquiries, or academic projects? Feel free to reach out to Andrei James O. Francisco.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email Contact</span>
+                  <a href="mailto:andreijames.francisco@bulsu.edu.ph" class="contact-link">andreijames.francisco@bulsu.edu.ph</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-id-badge"></i></div>
+                <div>
+                  <span class="contact-label">Student ID</span>
+                  <span class="contact-link">2024105459 (BulSU)</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="contact-label">Campus Location</span>
+                  <span class="contact-link">Bulacan State University, Malolos, Bulacan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Send a Quick Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="senderName">Your Name</label>
+                <input type="text" id="senderName" placeholder="e.g. Professor / Classmate" required>
+              </div>
+              <div class="form-group">
+                <label for="senderEmail">Your Email</label>
+                <input type="email" id="senderEmail" placeholder="your.email@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="senderMessage">Message</label>
+                <textarea id="senderMessage" rows="3" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toastNotification">
+    <i class="fa-solid fa-circle-check" id="toastIcon"></i>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; <span id="currentYear">2026</span> <strong>Andrei James O. Francisco</strong> — BSIT 3F-G2, Bulacan State University.</p>
+      <p class="footer-sub">Application Development & Emerging Technologies (ADET)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
